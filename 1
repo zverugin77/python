@@ -1,0 +1,15 @@
+print ('ПРЕДСТАВЛЯЕМ ВАШЕМУ ВНИМАНИЮ ТАКИЕ БАНКИ: 1) ТКБ, 2) СКБ, 3) ВТБ, 4) СБЕР ')
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+money = int(input("Сколько желаете положить в банк? - "))
+print(type(money))
+deposit1 = float(per_cent.get('ТКБ'))*money/100
+deposit2 = float(per_cent.get('СКБ'))*money/100
+deposit3 = float(per_cent.get('ВТБ'))*money/100
+deposit4 = float(per_cent.get('СБЕР'))*money/100
+deposit_all = [deposit1,deposit2,deposit3,deposit4]
+print (deposit1,deposit2,deposit3,deposit4)
+print(type(deposit_all))
+print (deposit_all)
+deposit_all.sort()
+print (deposit_all)
+print ('Максимальная сумма, которую вы можете заработать — ',deposit_all[-1])
